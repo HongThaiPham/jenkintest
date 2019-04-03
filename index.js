@@ -6,6 +6,6 @@ app.get("/", (req, res) => {
   res.json({ data: "OK" });
 });
 
-app.listen(3003, () => {
+app.listen(process.env.PORT || 3003, () => {
   console.log("app running ...");
 });
