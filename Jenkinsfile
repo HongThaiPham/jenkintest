@@ -1,6 +1,7 @@
 pipeline {
     agent { docker { image 'node:10.15' } }
     environment {
+        HOME = '.'
         PORT = 3004
     }
     stages {
